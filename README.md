@@ -2,14 +2,14 @@
 
 I will recommend you to learn some basic knowledge about Javascript and JSON before this sharing as MongoDB is database about JSON (actually BSON) and we use Javascript to communicate with the database. Below are some guide you may refer to.
 
-### JSON
+#### JSON
 * https://www.w3schools.com/js/js_json_intro.asp
 * https://www.digitalocean.com/community/tutorials/an-introduction-to-json
 
-### Javascript
+#### Javascript
 * https://www.w3schools.com/js/
 
-# Requirements
+## Requirements
 
 * Install MongoDB Community Edition 3.2 or later.
   <br>https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
@@ -23,7 +23,7 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
   <br>`pip install pymongo`
 * All codes used are stored in `ShellCRUDExamples.js` and `PymongoCRUDExamples.py`.
 
-# Content
+## Content
 1. Connect to MongoDB
 2. Insert Data
 3. Find or Query Data
@@ -33,11 +33,11 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
 7. (Optional) pymongo: Manipulate MongoDB with Python
 8. Additional Resources
 
-## Connect to MongoDB
+### Connect to MongoDB
 
 This can be done by two approaches, Mongo shell or Robomongo GUI.
 
-### Mongo Shell
+#### Mongo Shell
 * The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port. I will use 27018 in this course.
   <br>`mongo --port <port>`
 * Show databases availble on server.
@@ -49,7 +49,7 @@ This can be done by two approaches, Mongo shell or Robomongo GUI.
 * Select one record from a collection. Please take a look at the document structure.
   <br>`db.restaurants.findOne()`
 
-### Robomongo
+#### Robomongo
 * Open Robomongo and click `Create` to open a new MongoDB connection. If you are using the default configuration for your MongoDB, just give the connection a name.
 * Click `Test` to check whether the connection is successful. Make sure your mongod is running when you do this.
 * Click `Save` and you will be connected to the database.
@@ -57,27 +57,27 @@ This can be done by two approaches, Mongo shell or Robomongo GUI.
 * In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. Press `Enter` to change line in the command window and `Ctrl+Enter` to run the command.
 * There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
-# Insert Data
+### Insert Data
 https://docs.mongodb.com/getting-started/shell/update/
 
-# Find or Query Data
+### Find or Query Data
 https://docs.mongodb.com/getting-started/shell/query/
 
-# Update Data
+### Update Data
 https://docs.mongodb.com/getting-started/shell/update/
 
-# Remove Data
+### Remove Data
 https://docs.mongodb.com/getting-started/shell/remove/
 
-# Data Aggregation
+### Data Aggregation
 https://docs.mongodb.com/getting-started/shell/aggregation/
 
-# (Optional) pymongo: Manipulate MongoDB with Python
+### (Optional) pymongo: Manipulate MongoDB with Python
 https://docs.mongodb.com/getting-started/python/
 
-# Additional Resources
+### Additional Resources
 
-### MongoDB University Online Courses
+#### MongoDB University Online Courses
 MongoDB University provide a series of MongoDB online courses for developers and DBAs, you can check below site if you are interesting in it.
 
 * Course catalog
@@ -87,7 +87,7 @@ MongoDB University provide a series of MongoDB online courses for developers and
 * M102: MongoDB for DBAs
   <br>https://university.mongodb.com/courses/M102/about
   
-### MongoDB Manual and Blog
+#### MongoDB Manual and Blog
 
 I always believe manual is the best reference. MongoDB blog also has some insightful articles may written by developers and DBAs. Here are some articles that I think will be helpful. Try it.
 

@@ -21,7 +21,7 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
   <br>`mongoimport --port <port> --db test --collection restaurants --drop --file primer-dataset.json`
 * Optional: Install Python 3.5.1 or later version and pymongo using below command.
   <br>`pip install pymongo`
-* All codes used are stored in `CRUDCommands.js` and `PymongoCRUD.py`.
+* All codes used are stored in `ShellCRUDExamples.js` and `PymongoCRUDExamples.py`.
 
 # Content
 1. Connect to MongoDB

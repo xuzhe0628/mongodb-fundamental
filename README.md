@@ -48,14 +48,16 @@ I always believe manual is the best reference. MongoDB blog also has some insigh
   <br>https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
 * Import sample database using below command. The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port. This command will import the JSON file into database test as collection restaurants.
   <br>`mongoimport --port <port> --db test --collection restaurants --drop --file primer-dataset.json`
+* 
 
 # Content
 1. Connect to MongoDB
-2. Read operations
-3. Update operations
-4. Delete operations
-5. Aggregation Framework
-6. pymongo: Manipulate MongoDB with Python
+2. Insert Data
+3. Find or Query Data
+4. Update Data
+5. Remove Data
+6. Data Aggregation
+7. pymongo: Manipulate MongoDB with Python
 
 ## Connect to MongoDB
 
@@ -81,21 +83,20 @@ This can be done by two approaches, Mongo shell or Robomongo GUI.
 * In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. Press `Enter` to change line in the command window and `Ctrl+Enter` to run the command.
 * There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
-## Read operations
+# Insert Data
+https://docs.mongodb.com/getting-started/shell/update/
 
-### Query by top level field
-This query select restaurants in Manhattan.
-<br>`db.restaurants.find( { "borough": "Manhattan" } )`
+# Find or Query Data
+https://docs.mongodb.com/getting-started/shell/query/
 
-### Query by a Field in an Embedded Documentery 
-For example, we want to find how many restaurants have zipcode 10462. The number is 150.
-<br>`db.restaurants.find({"address.zipcode": "10462"}).count()`
+# Update Data
+https://docs.mongodb.com/getting-started/shell/update/
 
-### Query by a Field in an Array
-This documents
-<br>`db.restaurants.find( { "grades.grade": "A" } )`
+# Remove Data
+https://docs.mongodb.com/getting-started/shell/remove/
 
-## Update operations
-## Delete operations
-## Aggregation Framework
-## pymongo: Manipulate MongoDB with Python
+# Data Aggregation
+https://docs.mongodb.com/getting-started/shell/aggregation/
+
+# pymongo: Manipulate MongoDB with Python
+https://docs.mongodb.com/getting-started/python/

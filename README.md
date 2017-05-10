@@ -62,28 +62,39 @@ I always believe manual is the best reference. MongoDB blog also has some insigh
 This can be done by two approaches, Mongo shell or Robomongo GUI.
 
 ### Mongo Shell
-* The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port.
+* The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port. I will use 27018 in this course.
   <br>`mongo --port <port>`
 * Show databases availble on server.
   <br>`show dbs`
-* Switch to a specific database.
+* Switch to a specific database. I will use test database in this course.
   <br>`use <database>`
-* Show collections, tables in SQL Server, in the database.
+* Show collections, tables in SQL Server, in the database. I will use restaurants collection in this course.
   <br>`show tables` or `show collections`
+* Select one record from a collection. Please take a look at the document structure.
+  <br>`db.restaurants.findOne()`
 
 ### Robomongo
-* Open Robomongo and click **Create** to open a new MongoDB connection. If you are using the default configuration for your MongoDB, just give the connection a name.
-* Click **Test** to check whether the connection is successful. Make sure your mongod is running when you do this.
-* Click **Save** and you will be connected to the database.
+* Open Robomongo and click `Create` to open a new MongoDB connection. If you are using the default configuration for your MongoDB, just give the connection a name.
+* Click `Test` to check whether the connection is successful. Make sure your mongod is running when you do this.
+* Click `Save` and you will be connected to the database.
 * Double Click your database and choose the collection you want to check. A new window will occur with a command window and all documents in the collection.
-* In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
+* In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. Press `Enter` to change line in the command window and `Ctrl+Enter` to run the command.
+* There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
 ## Read operations
 
+### Query by top level field
+This query select restaurants in Manhattan.
+<br>`db.restaurants.find( { "borough": "Manhattan" } )`
 
-* Select one record from a collection
-  <br>`db.<collection>.findOne()`
-* Select documents from a query 
+### Query by a Field in an Embedded Documentery 
+For example, we want to find how many restaurants have zipcode 10462. The number is 150.
+<br>`db.restaurants.find({"address.zipcode": "10462"}).count()`
+
+### Query by a Field in an Array
+This documents
+<br>`db.restaurants.find( { "grades.grade": "A" } )`
+
 ## Update operations
 ## Delete operations
 ## Aggregation Framework

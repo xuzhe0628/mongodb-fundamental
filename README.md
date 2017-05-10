@@ -9,35 +9,6 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
 ### Javascript
 * https://www.w3schools.com/js/
 
-# Additional Resources
-
-### MongoDB University Online Courses
-MongoDB University provide a series of MongoDB online courses for developers and DBAs, you can check below site if you are interesting in it.
-
-* Course catalog
-  <br>https://university.mongodb.com/courses/catalog
-* M101P: MongoDB for Developers
-  <br>https://university.mongodb.com/courses/M101P/about
-* M102: MongoDB for DBAs
-  <br>https://university.mongodb.com/courses/M102/about
-  
-### MongoDB Manual and Blog
-
-I always believe manual is the best reference. MongoDB blog also has some insightful articles may written by developers and DBAs. Here are some articles that I think will be helpful. Try it.
-
-* MongoDB Manual
-  <br>https://docs.mongodb.com/manual/
-* SQL to MongoDB Mapping Chart
-  <br>https://docs.mongodb.com/manual/reference/sql-comparison/
-* 6 Rules of Thumb for MongoDB Schema Design: Part 1
-  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
-* 6 Rules of Thumb for MongoDB Schema Design: Part 2
-  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2
-* 6 Rules of Thumb for MongoDB Schema Design: Part 3
-  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-3
-* Quick Reference Cards (Cheatsheet)
-  <br>https://www.mongodb.com/collateral/quick-reference-cards
-
 # Requirements
 
 * Install MongoDB Community Edition 3.2 or later.
@@ -48,7 +19,9 @@ I always believe manual is the best reference. MongoDB blog also has some insigh
   <br>https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
 * Import sample database using below command. The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port. This command will import the JSON file into database test as collection restaurants.
   <br>`mongoimport --port <port> --db test --collection restaurants --drop --file primer-dataset.json`
-* 
+* Optional: Install Python 3.5.1 or later version and pymongo using below command.
+  <br>`pip install pymongo`
+* All codes used are stored in `CRUDCommands.js` and `PymongoCRUD.py`.
 
 # Content
 1. Connect to MongoDB
@@ -57,7 +30,8 @@ I always believe manual is the best reference. MongoDB blog also has some insigh
 4. Update Data
 5. Remove Data
 6. Data Aggregation
-7. pymongo: Manipulate MongoDB with Python
+7. (Optional) pymongo: Manipulate MongoDB with Python
+8. Additional Resources
 
 ## Connect to MongoDB
 
@@ -98,5 +72,34 @@ https://docs.mongodb.com/getting-started/shell/remove/
 # Data Aggregation
 https://docs.mongodb.com/getting-started/shell/aggregation/
 
-# pymongo: Manipulate MongoDB with Python
+# (Optional) pymongo: Manipulate MongoDB with Python
 https://docs.mongodb.com/getting-started/python/
+
+# Additional Resources
+
+### MongoDB University Online Courses
+MongoDB University provide a series of MongoDB online courses for developers and DBAs, you can check below site if you are interesting in it.
+
+* Course catalog
+  <br>https://university.mongodb.com/courses/catalog
+* M101P: MongoDB for Developers
+  <br>https://university.mongodb.com/courses/M101P/about
+* M102: MongoDB for DBAs
+  <br>https://university.mongodb.com/courses/M102/about
+  
+### MongoDB Manual and Blog
+
+I always believe manual is the best reference. MongoDB blog also has some insightful articles may written by developers and DBAs. Here are some articles that I think will be helpful. Try it.
+
+* MongoDB Manual
+  <br>https://docs.mongodb.com/manual/
+* SQL to MongoDB Mapping Chart
+  <br>https://docs.mongodb.com/manual/reference/sql-comparison/
+* 6 Rules of Thumb for MongoDB Schema Design: Part 1
+  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+* 6 Rules of Thumb for MongoDB Schema Design: Part 2
+  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2
+* 6 Rules of Thumb for MongoDB Schema Design: Part 3
+  <br>https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-3
+* Quick Reference Cards (Cheatsheet)
+  <br>https://www.mongodb.com/collateral/quick-reference-cards

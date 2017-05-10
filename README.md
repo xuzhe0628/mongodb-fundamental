@@ -9,9 +9,15 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
 ### Javascript
 * https://www.w3schools.com/js/
 
+### MongoDB University Online Courses
 MongoDB University provide a series of MongoDB online courses for developers and DBAs, you can check below site if you are interesting in it.
 
-* https://university.mongodb.com/courses/catalog
+* Course catalog
+  <br>https://university.mongodb.com/courses/catalog
+* M101P: MongoDB for Developers
+  <br>https://university.mongodb.com/courses/M101P/about
+* M102: MongoDB for DBAs
+  <br>https://university.mongodb.com/courses/M102/about
 
 # Requirements
 
@@ -27,12 +33,11 @@ MongoDB University provide a series of MongoDB online courses for developers and
 
 # Content
 1. Connect to MongoDB
-2. Create collections and documents
-3. Read operations
-4. Update operations
-5. Delete operations
-6. Aggregation Framework
-7. pymongo: Manipulate MongoDB with Python
+2. Read operations
+3. Update operations
+4. Delete operations
+5. Aggregation Framework
+6. pymongo: Manipulate MongoDB with Python
 
 ## Connect to MongoDB
 
@@ -57,7 +62,6 @@ Click **Save** and you will be connected to the database.
 Double Click your database and choose the collection you want to check. A new window will occur with a command window and all documents in the collection.
 In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
-## Create collections and documents
 ## Read operations
 ## Update operations
 ## Delete operations

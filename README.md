@@ -44,23 +44,23 @@ MongoDB University provide a series of MongoDB online courses for developers and
 This can be done by two approaches, Mongo shell or Robomongo GUI.
 
 ### Mongo Shell
-The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port.
-<br>`mongo --port <port>`
-Show databases availble on server.
-<br>`show dbs`
-Switch to a specific database.
-<br>`use <database>`
-Show collections, tables in SQL Server, in the database.
-<br>`show tables` or `show collections`
-Select one record from a collection
-<br>`db.<collection>.findOne()`
+* The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port.
+  <br>`mongo --port <port>`
+* <br>Show databases availble on server.
+  <br>`show dbs`
+* <br>Switch to a specific database.
+  <br>`use <database>`
+* <br>Show collections, tables in SQL Server, in the database.
+  <br>`show tables` or `show collections`
+* <br>Select one record from a collection
+  <br>`db.<collection>.findOne()`
 
 ### Robomongo
-Open Robomongo and click **Create** to open a new MongoDB connection. If you are using the default configuration for your MongoDB, just give the connection a name.
-Click **Test** to check whether the connection is successful. Make sure your mongod is running when you do this.
-Click **Save** and you will be connected to the database.
-Double Click your database and choose the collection you want to check. A new window will occur with a command window and all documents in the collection.
-In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
+* Open Robomongo and click **Create** to open a new MongoDB connection. If you are using the default configuration for your MongoDB, just give the connection a name.
+* Click **Test** to check whether the connection is successful. Make sure your mongod is running when you do this.
+* Click **Save** and you will be connected to the database.
+* Double Click your database and choose the collection you want to check. A new window will occur with a command window and all documents in the collection.
+* In the shell command, you can run any command as Robomongo has a full featured shell as the original Mongo shell. There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
 ## Read operations
 ## Update operations

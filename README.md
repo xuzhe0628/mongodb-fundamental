@@ -46,13 +46,13 @@ This can be done by two approaches, Mongo shell or Robomongo GUI.
 ### Mongo Shell
 * The default port is 27017 and you can ignore the `--port` parameter if you are connection to the default port.
   <br>`mongo --port <port>`
-* <br>Show databases availble on server.
+* Show databases availble on server.
   <br>`show dbs`
-* <br>Switch to a specific database.
+* Switch to a specific database.
   <br>`use <database>`
-* <br>Show collections, tables in SQL Server, in the database.
+* Show collections, tables in SQL Server, in the database.
   <br>`show tables` or `show collections`
-* <br>Select one record from a collection
+* Select one record from a collection
   <br>`db.<collection>.findOne()`
 
 ### Robomongo

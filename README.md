@@ -12,7 +12,7 @@ I will recommend you to learn some basic knowledge about Javascript and JSON bef
 ## Requirements
 
 * Install MongoDB Community Edition 3.2 or later.
-  <br>https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+    <br>https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
 * Install RoboMongo
   <br>https://robomongo.org/
 * Download sample database.
@@ -58,7 +58,7 @@ This can be done by two approaches, Mongo shell or Robomongo GUI.
 * There may be some commands that you can run but it will not return the result, such as explan command that returning the explain plan of one query.
 
 ### Insert Data
-https://docs.mongodb.com/getting-started/shell/update/
+https://docs.mongodb.com/getting-started/shell/insert/
 
 ### Find or Query Data
 https://docs.mongodb.com/getting-started/shell/query/
@@ -86,7 +86,7 @@ MongoDB University provide a series of MongoDB online courses for developers and
   <br>https://university.mongodb.com/courses/M101P/about
 * M102: MongoDB for DBAs
   <br>https://university.mongodb.com/courses/M102/about
-  
+
 #### MongoDB Manual and Blog
 
 I always believe manual is the best reference. MongoDB blog also has some insightful articles may written by developers and DBAs. Here are some articles that I think will be helpful. Try it.

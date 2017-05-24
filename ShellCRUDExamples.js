@@ -34,6 +34,8 @@ db.restaurants.insert(
    
    //
 )
+
+db.getCollection('restaurants').find({restaurant_id : "41704620"})
 /************Find or Query Data************/
 // Query for All Documents in a Collection
 db.restaurants.find()
@@ -62,6 +64,9 @@ db.restaurants.find( { "grades.score": { $lt: 10 } } )
 // Combine Conditions
 // Logical AND
 db.restaurants.find( { "cuisine": "Italian", "address.zipcode": "10075" } )
+db.restaurants.find( 
+    {$and : [{ "cuisine": "Italian"}, {"address.zipcode": "10075" }]} 
+)
 
 // Logical OR
 db.restaurants.find(
@@ -69,7 +74,8 @@ db.restaurants.find(
 )
 
 // Sort Query Results
-db.restaurants.find().sort( { "borough": 1, "address.zipcode": 1 } )
+// 1 means ascending, -1 means descending
+db.restaurants.find().sort( { "borough": -1, "address.zipcode": 1 } )
 
 // Projection
 db.restaurants.find( 
@@ -100,7 +106,7 @@ db.restaurants.update(
     $set: { cuisine: "Category To Be Determined" },
     $currentDate: { "lastModified": true }
   },
-  { multi: true}
+  { multi: true }
 )
 
 // Replace a Document
